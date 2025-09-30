@@ -3,11 +3,12 @@ from io import StringIO
 
 from app.calculator import display_help, display_history, calculator
 
+__all__ = ["display_help", "display_history", "calculator"]
 
 def test_display_help(capsys):
     display_help()
     captured = capsys.readouterr()
-    expected_output = """
+    expected_output =  """
 Calculator REPL Help
 --------------------
 Usage:
